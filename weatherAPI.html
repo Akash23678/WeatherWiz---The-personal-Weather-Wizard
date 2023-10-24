@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+        }
+
+        html,body{
+            width: 100%;
+            height: 100%;
+            
+        }
+    </style>
+</head>
+
+<body>
+
+    <div>
+        <input type="text" placeholder="Enter Your City" id="city-name">
+        <button id="clickBtn">Search</button>
+    </div>
+    <div>
+        <h3>
+            <center id="weather-data" ="Blue">Weather Data</center>
+            <hr>
+        </h3>
+        <center>
+            <li id="city"></li>
+            <li id="region"></li>
+            <li id="time"></li>
+            <li id="temp"></li>
+            <li id="humidity"></li>
+            <li id="weather-cond"></li>
+            <li id="wind"></li>
+
+        </center>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
