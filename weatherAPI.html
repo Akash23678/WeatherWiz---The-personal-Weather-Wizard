@@ -5,34 +5,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
     <style>
-        *{
+        * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
 
         }
 
-        html,body{
+        html,
+        body {
             width: 100%;
             height: 100%;
-            
+            background-image: url('https://images.unsplash.com/photo-1697470091872-e748a54f409d?auto=format&fit=crop&q=80&w=3401&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+            background-size: cover;
         }
+        
     </style>
 </head>
 
 <body>
-
-    <div>
+    <h3>
+        Weather Information Of <span id="span-tag">Your City</span>
+        <hr>
+    </h3>
+    <div id="container-1">
         <input type="text" placeholder="Enter Your City" id="city-name">
         <button id="clickBtn">Search</button>
     </div>
-    <div>
-        <h3>
-            <center id="weather-data" ="Blue">Weather Data</center>
-            <hr>
-        </h3>
-        <center>
+
+    <div id="container-2">
+        <ul>
             <li id="city"></li>
             <li id="region"></li>
             <li id="time"></li>
@@ -41,7 +45,7 @@
             <li id="weather-cond"></li>
             <li id="wind"></li>
 
-        </center>
+        </ul>
 
     </div>
 
