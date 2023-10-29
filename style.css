@@ -1,0 +1,47 @@
+
+
+/*Actual Content CSS*/
+
+button {
+    width: 100px;
+    height: 40px;
+    font-size: 24px;
+    
+    /*When we click search button it will transition 
+    all property with 0.2s delay */
+
+    transition: all ease 0.2s;
+}
+button:active,button:hover{
+    scale: 0.7;
+    box-shadow: 5px 5px black;
+}
+
+input {
+    width: 300px;
+    height: 40px;
+    font-size: 24px;
+}
+h3 {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 40px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#container-1 {
+    text-align: center;
+    /* border: 2px solid blue; */
+    margin: 50px 5px;
+    padding: 5px 10px;
+}
+
+#container-2 {
+    text-align: center;
+    /* border: 2px solid rgb(223, 26, 216); */
+    margin-top: 100px;
+    padding: 5px 10px;
+    font-size: 30px;
+    display: flex-down;
+    text-align: center;
+}
