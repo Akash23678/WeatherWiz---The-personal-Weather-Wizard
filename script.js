@@ -1,7 +1,9 @@
 
-
 //Getting Current Location and Weather data
 async function getDataOfCurrentLocation(latitude, longitude) {
+    //for Loader starting
+    document.getElementById ("loader-container").style.display = 'flex';
+    
     const response = await fetch(`http://api.weatherapi.com/v1/current.json?key=aa40ba8fe3484d62b88170853232210&q=${latitude},${longitude}&aqi=yes`);
     const resp_data = await response.json();
     console.log(resp_data);
@@ -69,6 +71,11 @@ function printWeather(response) {
     document.getElementById("humidity").innerText = "humidity: " + response.current.humidity;
     document.getElementById("weather-cond").innerText = "Weather: " + response.current.condition.text;
     document.getElementById("wind").innerText = "wind-Speed: " + response.current.wind_kph;
+
+    document.getElementById('container-2').style.display = 'block';
+    //For Loader closing
+    document.getElementById ("loader-container").style.display = 'none';
     
 }
+
 
