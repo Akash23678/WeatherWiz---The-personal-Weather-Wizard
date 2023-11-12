@@ -26,28 +26,41 @@
 </head>
 
 <body>
-    <h3>
-        Weather Information Of <span id="span-tag">Your City</span>
-        <hr>
-    </h3>
+    <div>
+        <h2>
+            Weatherwiz
+        </h2>
+        <h3>
+            Weather Information Of <span id="span-tag">Your City</span>
+            <hr>
+        </h3>
+    </div>
+    
     <div id="container-1">
         <input type="text" placeholder="Enter Your City" id="city-name">
         <button id="clickBtn">Search</button>
     </div>
+    
+    <div id="loader-container">
+        <l-line-spinner size="40" stroke="3" speed="1" color="black"></l-line-spinner>
+    </div>
 
-    <div id="container-2">
+    <div id="container-2" style="display: none;">
         <ul>
             <li id="city"></li>
             <li id="region"></li>
             <li id="time"></li>
             <li id="temp"></li>
+            <li id="wind"></li>
             <li id="humidity"></li>
             <li id="weather-cond"></li>
-            <li id="wind"></li>
 
         </ul>
 
     </div>
+    
+    <!-- For Loader Symbol -->
+    <script type="module" src="https://cdn.jsdelivr.net/npm/ldrs/dist/auto/lineSpinner.js"></script>
 
     <script src="script.js"></script>
 </body>
