@@ -47,7 +47,7 @@ h2{
     list-style-type: none; /* Remove bullet points */
 }
 #container-2 {
-    background-color: #fefae0;
+    /* background-color: #fefae0; */
     display: flex;
     justify-content: center;
     align-content: center;
