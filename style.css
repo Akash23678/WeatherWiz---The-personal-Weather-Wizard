@@ -8,10 +8,6 @@ button {
     width: 100px;
     height: 40px;
     font-size: 24px;
-    
-    /*When we click search button it will transition 
-    all property with 0.2s delay */
-
     transition: all ease 0.2s;
 }
 button:active,button:hover{
@@ -38,7 +34,7 @@ h2{
 
 #container-1 {
     text-align: center;
-    /* border: 2px solid blue; */
+    
     margin: 50px 5px;
     padding: 5px 10px;
 }
@@ -47,7 +43,7 @@ h2{
     list-style-type: none; /* Remove bullet points */
 }
 #container-2 {
-    /* background-color: #fefae0; */
+    
     display: flex;
     justify-content: center;
     align-content: center;
